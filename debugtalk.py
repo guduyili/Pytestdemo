@@ -38,4 +38,6 @@ class DebugTalk:
 if __name__ == '__main__':
     debug = DebugTalk()
     res = debug.get_extract_data('goodIds',3)
+    res2 = debug.get_extract_data('token')
     print(res)
+    print(res2)

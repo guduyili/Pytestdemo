@@ -75,7 +75,7 @@ if __name__ == '__main__':
     # 使用write存储token
     write_data = {}
     token = res.get('token')
-    write_data['Token'] = token
+    write_data['token'] = token
     read = ReadYamlData()
     read.write_data_yaml(write_data)
 
