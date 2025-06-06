@@ -2,6 +2,7 @@ import json
 import os.path
 # from debugtalk import DebugTalk
 import yaml
+from conf.setting import FILE_PATH
 
 
 def get_test_yaml(file):
@@ -17,7 +18,8 @@ class ReadYamlData:
 
     # 读入接口提取的变量值
     def get_extract_yaml(self, node_name):
-        file_path = 'extract.yaml'
+        # file_path = '../extract.yaml'
+        file_path = FILE_PATH['EXTRACT']
         if os.path.exists(file_path):
             pass
         else:
@@ -37,7 +39,8 @@ class ReadYamlData:
         :return:
         """
         file = None
-        file_path = 'extract.yaml'
+        file_path = FILE_PATH['EXTRACT']
+        print(file_path)
         # 不存在即创建新文件
         if not os.path.exists(file_path):
             os.system(file_path)
@@ -55,7 +58,7 @@ class ReadYamlData:
 
 if __name__ == '__main__':
     # 获取第一个配置项（假设YAML中包含多个测试用例，仅处理第一个）
-    res = get_test_yaml('login.yaml')[0]
+    res = get_test_yaml('../testcase/login/login.yaml')[0]
     url = res['baseInfo']['url']
     new_url = 'http://127.0.0.1:8787' + url
     method = res['baseInfo']['method']
@@ -98,5 +101,5 @@ if __name__ == '__main__':
     # debugtalk = DebugTalk()
     # ret = debugtalk.get_extract_data('goodIds', 0)
     # print(ret)
-    res2 = read.get_extract_yaml('goodIds')
-    print(res2)
+    # res2 = read.get_extract_yaml('goodIds')
+    # print(res2)
