@@ -1,0 +1,1 @@
+INFO     common.recordlog:test_login.py:46 LOG输出url http://127.0.0.1:8787/dar/user/login

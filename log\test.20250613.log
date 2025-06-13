@@ -1,0 +1,4 @@
+INFO - 2025-06-13 16:31:28,564 - test_login.py:46 -[test_login:test_03] - LOG输出url
+INFO - 2025-06-13 16:32:08,482 - test_login.py:46 -[test_login:test_03] - LOG输出url http://127.0.0.1:8787/dar/user/login
+INFO - 2025-06-13 17:09:10,574 - test_login.py:46 -[test_login:test_03] - LOG输出url http://127.0.0.1:8787/dar/user/login
+INFO - 2025-06-13 17:13:53,617 - test_login.py:46 -[test_login:test_03] - LOG输出url http://127.0.0.1:8787/dar/user/login

@@ -31,6 +31,7 @@ class OperationConfig:
         except Exception as e:
             print(e)
 
+
     def get_envi(self, option):
         """读取接口服务器ip地址"""
         return self.get_section_for_data('api_envi', option)

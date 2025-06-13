@@ -17,6 +17,7 @@ API_TIMEOUT = 60
 # 文件路径
 FILE_PATH = {
     'EXTRACT': os.path.join(DIR_BASE, 'extract.yaml'),
-    'CONF': os.path.join(DIR_BASE, 'conf/config.ini')
+    'CONF': os.path.join(DIR_BASE, 'conf/config.ini'),
+    'LOG': os.path.join(DIR_BASE, 'log')
 }
 # print(FILE_PATH['CONF'])
